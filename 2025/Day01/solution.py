@@ -13,11 +13,11 @@ for rotation in rotations:
         distance %= 100
 
     if direction == "L":
-        if distance > current and distance < 100 and current != 0:
+        if distance > current and current != 0:
             pass2 += 1
         current = (current - distance) % 100
     elif direction == "R":
-        if current + distance > 100 and distance < 100 and current != 0:
+        if current + distance > 100:
             pass2 += 1
         current = (current + distance) % 100
 
