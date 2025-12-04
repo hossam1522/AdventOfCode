@@ -50,5 +50,5 @@ func raw(limit int, array []string) int {
 func main() {
 	data := readFile()
 	fmt.Println("Solution 1:", raw(2, data))
-	fmt.Println("Solution 1:", raw(12, data))
+	fmt.Println("Solution 2:", raw(12, data))
 }
